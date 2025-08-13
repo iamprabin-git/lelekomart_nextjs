@@ -1,4 +1,4 @@
-import hero from "@/assets/images/auth-hero.png";
+import hero from "@/assets/images/bg.jpg";
 import bg from "@/assets/images/auth-bg.png";
 import Image from "next/image";
 

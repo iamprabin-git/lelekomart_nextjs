@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   FiFacebook,
   FiTwitter,
@@ -23,36 +24,36 @@ const Footer = () => {
               experience enjoyable and hassle-free.
             </p>
             <div className="flex space-x-4 pt-2">
-              <a
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
               >
                 <FiFacebook size={20} />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
               >
                 <FiTwitter size={20} />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
               >
                 <FiInstagram size={20} />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
               >
                 <FiLinkedin size={20} />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
               >
                 <FiYoutube size={20} />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -61,52 +62,52 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-white">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
                 >
                   Shop
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
                 >
                   New Arrivals
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
                 >
                   Best Sellers
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
                 >
                   Special Offers
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
                 >
                   My Account
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -116,52 +117,52 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-white">Customer Service</h3>
             <ul className="space-y-2">
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
                 >
                   FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
                 >
                   Shipping Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
                 >
                   Returns & Refunds
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
                 >
                   Terms & Conditions
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -173,28 +174,28 @@ const Footer = () => {
               <div className="flex items-start">
                 <FiMapPin className="mt-1 mr-3 flex-shrink-0 text-[#016EB7] dark:text-blue-400" />
                 <p className="text-gray-400">
-                  123 Business Avenue, Tech Park
+                  Godawari Municipality-5,
                   <br />
-                  San Francisco, CA 94107
+                  Lele, Lalitpur
                 </p>
               </div>
               <div className="flex items-center">
                 <FiPhone className="mr-3 flex-shrink-0 text-[#016EB7] dark:text-blue-400" />
-                <a
+                <Link
                   href="tel:+15551234567"
                   className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
                 >
-                  +1 (555) 123-4567
-                </a>
+                  +977 9808083620
+                </Link>
               </div>
               <div className="flex items-center">
                 <FiMail className="mr-3 flex-shrink-0 text-[#016EB7] dark:text-blue-400" />
-                <a
+                <Link
                   href="mailto:info@yourstore.com"
                   className="text-gray-400 hover:text-[#016EB7] dark:hover:text-blue-400 transition-colors duration-300"
                 >
-                  info@yourstore.com
-                </a>
+                  info.lelekomart@gmail.com
+                </Link>
               </div>
             </div>
 
@@ -231,18 +232,18 @@ const Footer = () => {
           </h4>
           <div className="flex flex-wrap justify-center items-center gap-4">
             <img
-              src="https://static.cdnlogo.com/logos/p/41/paypal.svg"
-              alt="PayPal"
+              src="https://khaltibyime.khalti.com/wp-content/uploads/2025/07/Logo-for-Blog.png"
+              alt="Khalti"
               className="h-8"
             />
             <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"
-              alt="Apple Pay"
+              src="https://img.favpng.com/7/14/6/esewa-fonepay-pvt-ltd-logo-portable-network-graphics-image-brand-png-favpng-aLLyxWtspEZQckmv19jDj2TWC.jpg"
+              alt="Esewa"
               className="h-8"
             />
             <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
-              alt="Google Pay"
+              src="https://www.extensodata.com/images/clients/1642677877_fonepay_logo.png"
+              alt="Fonepay"
               className="h-8"
             />
           </div>
@@ -251,10 +252,10 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-8 text-center text-gray-400 text-sm">
           <p>
-            &copy; {new Date().getFullYear()} Your Store Name. All rights
+            &copy; {new Date().getFullYear()} Lele ko Mart. All rights
             reserved.
           </p>
-          <p className="mt-2">Designed and developed with ❤️ by Your Team</p>
+          <p className="mt-2">Designed and developed by <Link href="https://dangolprabin.com.np">Prabin Dangol</Link></p>
         </div>
       </div>
     </footer>

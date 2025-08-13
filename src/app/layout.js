@@ -3,6 +3,7 @@ import "./globals.css";
 import config from "@/config";
 import AppProvider from "@/redux/provider";
 import MainLayout from "@/layouts/MainLayout";
+import Footer from "@/components/home/Footer";
 
 export const metadata = {
   title: {
@@ -21,6 +22,7 @@ export default async function RootLayout({ children }) {
           <MainLayout>
             <Header />
             {children}
+            <Footer />
           </MainLayout>
         </AppProvider>
       </body>
