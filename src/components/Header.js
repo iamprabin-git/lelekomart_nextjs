@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-
 import AuthUser from "./AuthUser";
 import Navlink from "./Navlink";
 import logo from "@/assets/images/logo.png";
