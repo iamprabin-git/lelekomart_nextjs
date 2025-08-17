@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 async function ProductsPage({ searchParams }) {
-  const response = await getProducts(await searchParams);
+  const response = await getProducts(searchParams || {});
   const brandsResponse = await getBrands();
   const categoriesResponse = await getCategories();
 

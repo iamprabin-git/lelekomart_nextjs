@@ -17,6 +17,8 @@ async function getProducts(searchParams) {
   return await axios.get(`${config.apiUrl}/api/products?${query}`);
 }
 
+
+
 async function getProductByUser() {
   return await api.get(`/api/products/users`);
 }
