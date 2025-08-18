@@ -1,6 +1,6 @@
 import BestProduct from "@/components/home/BestProduct";
 import FeaturesSection from "@/components/home/Features";
-import Footer from "@/components/home/Footer";
+
 import HomePageSLider from "@/components/home/Slider";
 import Link from "next/link";
 import PopularProducts from "@/components/home/PopularProducts";
@@ -42,7 +42,7 @@ const HomePage = () => {
 
       <BestProduct />
 
-      <Footer />
+      
     </div>
   );
 };

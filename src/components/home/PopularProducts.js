@@ -4,9 +4,15 @@ import { PRODUCTS_ROUTE } from "@/constants/routes";
 import { getProducts } from "@/api/products";
 
 async function PopularProducts() {
-  const response = await getProducts({ category: "Smartphones" });
+  let products = [];
 
-  const products = response.data;
+  try {
+    const response = await getProducts({ category: "Smartphones" });
+    products = response?.data || [];
+  } catch (error) {
+    console.error("Error fetching popular products:", error);
+    // Optionally you can render fallback UI here
+  }
 
   return (
     <section className="py-16 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
@@ -28,11 +34,17 @@ async function PopularProducts() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {products?.map((product, index) => (
-            <ProductCard key={index} product={product} />
-          ))}
-        </div>
+        {products.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {products.map((product, index) => (
+              <ProductCard key={index} product={product} />
+            ))}
+          </div>
+        ) : (
+          <p className="text-center py-10 text-lg text-red-500">
+            No products found!
+          </p>
+        )}
       </div>
     </section>
   );
