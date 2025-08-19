@@ -9,13 +9,16 @@ export const metadata = {
 };
 
 async function ProductsPage({ searchParams }) {
-  const response = await getProducts(searchParams || {});
+  // ✅ Await searchParams to get a plain object
+  const params = await searchParams;
+
+  const response = await getProducts(params || {});
   const brandsResponse = await getBrands();
   const categoriesResponse = await getCategories();
 
-  const products = response?.data;
-  const brands = brandsResponse?.data;
-  const categories = categoriesResponse?.data;
+  const products = response?.data || [];
+  const brands = brandsResponse?.data || [];
+  const categories = categoriesResponse?.data || [];
 
   return (
     <section className="min-h-screen">
@@ -26,14 +29,15 @@ async function ProductsPage({ searchParams }) {
         <SearchProduct />
         <ProductFilters brands={brands} categories={categories} />
       </div>
-      {products?.length > 0 ? (
+
+      {products.length > 0 ? (
         <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 py-8">
-          {products?.map((product, index) => (
+          {products.map((product, index) => (
             <ProductCard key={index} product={product} />
           ))}
         </div>
       ) : (
-        <p className="text-center py-10  text-lg text-red-500 w-full">
+        <p className="text-center py-10 text-lg text-red-500 w-full">
           No products found! Please try different keywords.
         </p>
       )}
